@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('express').Router();
 
 const usersControllers = require('../controllers/users');
-const  Routes  = require('.');
+const  Routes  = require('.').default;
 
 routes.post('/', usersControllers.createUser);
 routes.put ('/:id', usersControllers.updateUser);
